@@ -1,0 +1,43 @@
+.banner {
+    margin-top: 105px;
+    width: 100%;
+    position: relative;
+    height: auto;
+
+    @media (max-width: 1300px) {
+        margin-top:97px;
+    }
+    @media (max-width: 992px) {
+        margin-top:60px;
+        padding-bottom: 80px;
+    }
+}
+
+.title{
+    font-weight: 400;
+    font-size: 100px;
+    color: #fff;
+    text-shadow:
+            -2px -2px 0 #000,
+            2px -2px 0 #000,
+            -2px  2px 0 #000,
+            2px  2px 0 #000;
+    position: absolute;
+    bottom: 6%;
+    left: 10%;
+    @media (max-width: 1300px) {
+        font-size: 60px;
+    }
+    @media (max-width: 992px) {
+        bottom: 0;
+        left: 50%;
+        font-size: 60px;
+        margin-left: -132px;
+        color: #000000;
+        text-shadow: unset;
+    }
+}
+.bg{
+    height: auto;
+    width: 100%;
+}

@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@font-face {
+    font-family: 'JejuHallasan';
+    font-style: normal;
+    src: url('./Assets/Fonts/jejuhallasan.woff') format('woff');
+}
+@font-face {
+    font-family: 'Itim';
+    font-style: normal;
+    src: url('./Assets/Fonts/Itim-Regular.woff') format('woff');
+}
+:root {
+    --text-color: #000000;
+    --second-color: #FFFFFF;
+    --background-color: #F9EEBF;
+    --background-color-70: rgba(255, 212, 178, 0.7)
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "JejuHallasan", sans-serif;
+    background-color: var(--background-color);
+    background-size: cover;
+    color: var(--text-color);
+    line-height: 1.2;
+}
+img{
+    user-select: none;
+    pointer-events: none;
+}
+
+h1, h2, h3, h4, h5, h6, a {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    color: var(--text-color);
+    font-family: "JejuHallasan", sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+
+    @media (max-width: 850px) {
+        font-size: 2.5rem;
+    }
+
+    @media (max-width: 540px) {
+        font-size: 2rem;
+    }
+}
+
+.title {
+    font-size: 80px;
+    margin: 0;
+
+    @media (max-width: 1300px) {
+        font-size: 40px;
+    }
+}
+
+button {
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    @media (max-width: 850px) {
+        padding: 0 30px;
+    }
+
+    @media (max-width: 540px) {
+        padding: 0 15px;
+    }
+}
+p{
+    font-weight: 400;
+    font-size: 32px;
+    color: var(--text-color);
+    font-family: 'itim', sans-serif;
+
+    @media (max-width: 1300px) {
+        font-size: 24px;
+    }
+    @media (max-width: 992px) {
+        font-size: 18px;
+    }
+}
+.adaptation{
+    @media (max-width: 992px) {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-bottom: 300px;
+    }
+}
